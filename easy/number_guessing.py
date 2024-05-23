@@ -26,9 +26,8 @@ while True:
 	if guess_nbr == random_nbr:
 		print("You Got It Right!!")
 		break
+	elif guess_nbr > random_nbr:
+		print("You gessed above the number!")
 	else:
-		if guess_nbr > random_nbr:
-			print("You gessed above the number!")
-		else:
-			print("You gessed less than the number!") 
+		print("You gessed less than the number!") 
 print("You Got It in", guesses_nbr, "guesses")
