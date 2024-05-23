@@ -7,35 +7,39 @@ if playing.lower() != "yes":
 
 print("OKAY! let's play!")
 
+score = 0
+
 answer = input("What CPU stands for? ")
 
 if answer.lower() == "central processing unit":
 	print("CORRECT! U R doing GREAT!!")
+	score += 1
 else:
 	print("Wrong Answer :(")
-	quit()
 
 answer = input("What RAM stands for? ")
 
 if answer.lower() == "random access memory":
 	print("CORRECT! U R doing GREAT!!")
+	score += 1
 else:
 	print("Wrong Answer :(")
-	quit()
 
 answer = input("What GPU stands for? ")
 
 if answer.lower() == "graphics processing unit":
 	print("CORRECT! U R doing GREAT!!")
+	score += 1
 else:
 	print("Wrong Answer :(")
-	quit()
 
 answer = input("What ROM stands for? ")
 
 if answer.lower() == "read only memory":
 	print("CORRECT! U R doing GREAT!!")
-	print("CONGRATULATIONS!! U WON :D")
+	score += 1
+
 else:
 	print("Wrong Answer :(")
-	quit()
+
+print("<< you got " + str((score / 4) * 100) + "%.")
